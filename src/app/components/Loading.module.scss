@@ -1,0 +1,44 @@
+@import "../../style/theme.scss";
+
+.loading {
+	position: absolute;
+	display: flex;
+	justifyContent: center;
+	alignItems: center;
+	height: 100vh;
+	width: 100%;
+	zIndex: 2;
+}
+
+.spinningCircle {
+	$width: 6px;
+	height: 4rem;
+	width: 4rem;
+	border-radius: 50%;
+	margin: 4rem auto;
+	border: $width solid rgba(255, 255, 255, 0);
+	border-top-color: $width solid $appMain;
+	border-right-color: $width solid $appMain;
+	animation: spinningCircleAnimation 4s infinite linear;
+}
+
+@keyframes spinningCircleAnimation {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		border-top-color: $appMain;
+		border-right-color: $appMain;
+	}
+
+	50% {
+		border-top-color: $appSecondary;
+		border-right-color: $appSecondary;
+	}
+
+	100% {
+		-webkit-transform: rotate(720deg);
+		transform: rotate(720deg);
+		border-top-color: $appMain;
+		border-right-color: $appMain;
+	}
+}

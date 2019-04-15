@@ -1,0 +1,34 @@
+// --- app colour palette ---
+$white: rgb(255, 255, 255);
+$textDark: rgb(0, 0, 0);
+$textNormal: rgb(109, 109, 109);
+$textLight: rgb(170, 170, 170);
+$textExtraLight: rgb(207, 207, 207);
+$accentPrimary: rgb(153, 245, 255);
+$accentSecondary: rgb(249, 134, 56);
+$accentTertiary: rgb(243, 77, 99);
+$accentQuarternary: rgb(0, 40, 90);
+$appMain: rgb(3, 209, 204);
+$appSecondary: rgb(15, 176, 171);
+$appTertiary: rgb(0, 99, 134);
+$background: $white;
+
+// --- Bulma settings ---
+$black: $textDark;
+$body-background: $background;
+$section-background: rgb(227, 227, 227);
+$turquoise: $appMain;
+$red: $accentSecondary;
+$info: $appTertiary;
+$family-sans-serif: 'Freight Sans', Arial, Helvetica, sans-serif;
+$family-serif: 'Stag Web';
+$title-size: 72px;
+$title-weight: 300;
+$tabs-link-color: $white;
+$tabs-toggle-link-border-color: none;
+$tabs-toggle-link-active-background-color: $white;
+$tabs-toggle-link-active-color: $black;
+$tabs-border-bottom-width: 0px;
+$tabs-toggle-link-hover-background-color: $appTertiary;
+$tabs-link-hover-color: $white;
+$subtitle-size: 54px;

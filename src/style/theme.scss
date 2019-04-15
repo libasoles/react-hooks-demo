@@ -1,0 +1,46 @@
+@import "./variables";
+@import "~bulma";
+
+$fontsPath: $cdnPath+"fonts";
+$imagesPath: $cdnPath+"images";
+
+// --- Custom styles ---
+.site-content {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.fill-height {
+  flex: 1;
+  overflow-x: auto;
+}
+
+.logo {
+  height: $navbar-height;
+  width: auto;
+}
+
+dt {
+  font-weight: bold;
+  margin-left: -1rem;
+  margin-top: 1rem;
+}
+
+th {
+  cursor: pointer;
+  user-select: none;
+}
+
+table {
+  margin-bottom: 3rem;
+}
+
+.textarea { 
+  resize: none;
+}
+
+h3.title { 
+  text-align: center;
+}
+
